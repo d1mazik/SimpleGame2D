@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-
+<?import javafx.scene.text.Font?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="698.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.game2d.HelloController">
    <children>
@@ -12,7 +13,7 @@
             <Image url="@../../../images/backround.jpg" />
          </image>
       </ImageView>
-      <ImageView fx:id="player" fitHeight="150.0" fitWidth="200.0" layoutX="14.0" layoutY="172.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="player" fitHeight="150.0" fitWidth="200.0" layoutX="14.0" layoutY="179.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../../images/player.png" />
          </image>
@@ -22,5 +23,20 @@
             <Image url="@../../../images/backround.jpg" />
          </image>
       </ImageView>
+      <ImageView fx:id="enemy" fitHeight="39.0" fitWidth="43.0" layoutX="811.0" layoutY="276.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/pngwing.com.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="labelPause" focusTraversable="false" layoutX="245.0" layoutY="154.0" text="Pause" visible="false">
+         <font>
+            <Font name="Aeromatics NC" size="48.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelLose" focusTraversable="false" layoutX="255.0" layoutY="164.0" text="LOSE" visible="false">
+         <font>
+            <Font name="Aeromatics NC" size="48.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>
